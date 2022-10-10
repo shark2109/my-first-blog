@@ -1,0 +1,21 @@
+.full-height {
+    height: 100%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.margin-top-20percent {
+    margin-top: 20px;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+.bg-navbar{
+    background-color: navy;
+}
+.text-white{
+    color: aliceblue;
+}

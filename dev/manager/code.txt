@@ -1,0 +1,35 @@
+開始
+cd /Users/shota/Developer/djangos/djangoapp
+source .venv/bin/activate
+cd shosite
+
+python3 manage.py runserver
+
+
+データベースのモデル変更の反映
+cd /Users/shota/Developer/djangos/djangoapp/shosite
+python manage.py makemigrations
+python manage.py migrate
+
+
+データベースのオブジェクトの作り方
+
+    オブジェクトの作り方としては2通りあります。
+    1) MODEL_NAME.objects.create(kwargs)
+
+    2) obj = MODEL_NAME(kwargs)
+    obj.save()
+
+    # MODEL_NAMEはモデルクラスの名前
+    # ksargsはキーワード引数
+
+for i in range(850,1000):
+      birthday = datetime.datetime(year=1980 + i % 20, month=1 + i % 12, day=1 + i % 28, tzinfo=pytz.timezone('Asia/Tokyo'))
+      Person.objects.create(name="person{}".format(i), birthday=birthday, sex=Person.MAN, address_from=Person.TOKYO, current_address=Person.TOKYO, email="person{}@gmail.com".format(i))
+
+
+next:
+https://qiita.com/gragragrao/items/373057783ba8856124f3#view%E3%81%A7%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E3%81%8B%E3%82%89%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B
+
+bootstrap cheatsheet
+https://hackerthemes.com/bootstrap-cheatsheet/#btn-warning
