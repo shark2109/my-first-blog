@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-!z=fi37mrq0fe4oy2b#*beg8611dulf+9m3aof6q-4+0ovuw-f"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = false
 
 #DEBUG が True に設定されていて、ALLOWED_HOSTS が空のリストの時は、
 # 自動的に ['localhost', '127.0.0.1', '[::1]'] という3つのホストに対してチェックが行われます。 
